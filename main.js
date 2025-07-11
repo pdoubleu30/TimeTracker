@@ -1,6 +1,6 @@
 const fetchJson = async () => {
   try {
-    let response = await fetch('/data.json');
+    let response = await fetch('data.json');
     if (!response.ok) {
       throw new Error('Oops! Something went wrong.');
     }
