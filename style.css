@@ -1,0 +1,425 @@
+/*styling settings */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "manrope", serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--Grey-200);
+ 
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+/* font */
+* {
+  font-family: rubik, sans-serif;
+}
+
+:root {
+/*Color variables */
+--Purple-600: hsl(246, 80%, 60%);
+
+--Orange-300: hsl(15, 100%, 70%);
+--Blue-300: hsl(195, 74%, 62%);
+--Pink-400: hsl(348, 100%, 68%);
+--Green-400: hsl(145, 58%, 55%);
+--Purple-700: hsl(264, 64%, 52%);
+--Yellow-300: hsl(43, 84%, 65%);
+
+--Navy-950: hsl(226, 43%, 10%);
+--Navy-900: hsl(235, 46%, 20%);
+--Purple-500: hsl(235, 45%, 61%);
+--Navy-200: hsl(236, 100%, 87%);
+
+/*Font Variables */
+--fw-light: 300;
+--fw-regular: 400;
+--fw-bold: 700;
+
+}
+
+
+main {
+  height: 100vh;
+  place-content: center;
+  margin: 5em 0em;
+
+}
+
+
+
+
+.totalTrack {
+  display: grid;
+  gap: 1.5em;
+  margin: 1em 1.5em;
+  padding-bottom: 5em;
+}
+
+.jerm__contain {
+ background-color: var(--Navy-900);
+ border-radius: 15px;
+
+}
+
+body {
+  background-color: #1e1e1e;;
+}
+
+
+.time__contain {
+  background-color: var(--Navy-900);
+  color: var(--Purple-500);
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.125em;
+  line-height: 1.3125em;
+  padding: 1.5em 0em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+
+/* styling before we incorpoarted button */
+/*
+.time__contain p:active{
+  color: white;
+}
+
+.time__contain p:hover{
+  color: white;
+}
+
+*/
+
+ button:active{
+  color: white;
+ }
+
+ button:hover{
+  color: white;
+ }
+
+
+.jerm {
+  width: 4em;
+  border: 3px solid white;
+  border-radius: 40px;
+
+}
+
+.personal {
+  display: flex;
+  padding: 2em;
+  gap: 1.5em;
+  background-color: var(--Purple-600);
+  border-radius: 15px;
+}
+
+.jR {
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  font-weight: var(--fw-light);
+}
+
+.rF {
+  color: var(--Navy-200);
+  font-size: 0.9375em;
+  line-height: 1.125em;
+  font-weight: var(--fw-regular);
+
+}
+
+
+/*images */
+.aImages {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+
+}
+
+
+.allContain {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+
+ 
+}
+
+.allContain2 {
+  border-radius: 15px;
+  background-color: var(--Navy-900);
+  margin-top: 2.3em;
+  color: white;
+  padding: 1.5em;
+}
+
+.allContain2:active:hover {
+  background-color: #33397A;
+}
+
+.allContain2:hover {
+  background-color: #33397A;
+}
+  
+  
+
+.activity__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.updateTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5em;
+  padding-bottom: .3em;
+}
+
+/* adding styling with newly created careds */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5em;
+  padding-bottom: .3em;
+  gap: 6.3em;
+}
+
+/*container colors*/
+
+.work__Contain {
+  background-color: var(--Orange-300);
+  background-image: url(images/icon-work.svg);
+  background-position: 230px -11px;
+}
+
+.play__Contain {
+  background-color: var(--Blue-300);
+  background-image: url(images/icon-play.svg);
+  background-position: 230px -6px;
+ 
+}
+
+.read__Contain {
+  background-color: var(--Pink-400);
+  background-image: url(images/icon-study.svg);
+  background-position: 230px -10px;
+}
+
+.exercise__Contain {
+  background-color: var(--Green-400);
+  background-image: url(images/icon-exercise.svg);
+   background-position: 230px -1px;
+}
+
+.chat__Contain {
+  background-color: var(--Purple-700);
+  background-image: url(images/icon-social.svg);
+   background-position: 238px -16px;
+}
+
+.health__Contain {
+  background-color: var(--Yellow-300);
+  background-image: url(images/icon-self-care.svg);
+   background-position: 250px -10px;
+}
+
+/*fonts */
+.prior {
+  color: var(--Navy-200);
+  font-size: 0.9375em;
+  line-height: 1.125em;
+  font-weight: var(--fw-regular);
+}
+
+.hours {
+  font-size: 2em;
+  font-weight: var(--fw-light);
+}
+
+.activity {
+  font-size: 1.125em;
+  line-height: 1.3125em;
+  font-weight: var(--fw-regular);
+}
+
+button {
+  background-color: var(--Navy-900);
+  color: var(--Purple-500);
+  border: none;
+}
+
+@media (min-width: 875px) {
+
+  .totalTrack {
+  grid-template-columns: repeat(4, 1fr);
+  /*here is where you solved your issue */
+  max-width: 1457px;
+  gap: 2em;
+  padding-left: 0em;
+  max-width: 1116px;
+  margin: 0 auto;
+
+  }
+
+
+
+  .jerm__contain {
+    grid-column-start: 1;
+    grid-row: 1 / span 2;
+
+  }
+
+  .prior {
+    padding-top: .3em;
+  }
+
+.jerm {
+  width: 4.875em;
+
+}
+
+/*fonts */
+.jR {
+  font-size: 2.5em;
+  line-height: 47px;
+}
+
+.rF {
+  font-size: 0.9375em;
+  line-height: 18px;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-right: 3em;
+}
+
+.time__contain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.125em;
+  line-height: 21px;
+  padding: 0em 2em;
+  padding-top: 1.5em;
+  gap: 1em;
+  
+
+}
+
+.jerm__info {
+  padding-right: 0em;
+  padding-bottom: 4em;
+}
+
+.hours {
+
+  font-size: 3.5em;
+  line-height: 66px;
+}
+
+.activity {
+  font-size: 1.125em;
+  line-height: 21px;
+}
+
+.prior {
+ line-height: 18px;
+}
+
+
+.updateTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: .5em;
+  padding-bottom: .3em;
+}
+
+/* adding styling with newly created cards */
+.card {
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: .5em;
+  padding-bottom: 0em;
+  gap: unset
+}
+  
+
+.activity__top {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+}
+
+.work__Contain {
+  background-position: 160px -11px;
+}
+
+.play__Contain {
+  background-position: 160px -6px;
+ 
+}
+
+.read__Contain {
+  background-position: 160px -10px;
+}
+
+.exercise__Contain {
+   background-position: 160px -1px;
+}
+
+.chat__Contain {
+   background-position: 165px -16px;
+}
+
+.health__Contain {
+   background-position: 175px -10px;
+}
+
+.allContain2 {
+  border-radius: 15px;
+  background-color: var(--Navy-900);
+  margin-top: 2.7em;
+  color: white;
+
+  padding: 2.33em;
+  padding-bottom: 1.5em;
+}
+
+}
