@@ -1,4 +1,3 @@
-
 const fetchJson = async () => {
   try {
     let response = await fetch('/data.json');
